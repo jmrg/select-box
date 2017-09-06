@@ -1,0 +1,35 @@
+{
+  "name": "selectbox",
+  "version": "1.0.0",
+  "description": "SelectBox is lightweight browser plugin that lets you create a UI select element and search between elements of the list.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmrg/selectbox"
+  },
+  "main": "src/selectbox.js",
+  "scripts": {
+    "postinstall": "bower install",
+    "test": "gulp && gulp test"
+  },
+  "keywords": [
+    "select",
+    "input",
+    "selectbox",
+    "jquery",
+    "plugin"
+  ],
+  "author": {
+    "email": "mauricio.reina.gabela@gmail.com",
+    "name": "Mauricio Reina"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1",
+    "gulp-qunit": "^1.5.0",
+    "gulp-uglify": "^3.0.0",
+    "run-sequence": "^2.1.0",
+    "pump": "^1.0.2"
+  }
+}

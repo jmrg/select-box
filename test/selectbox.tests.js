@@ -10,6 +10,6 @@ $(function() {
         assert.equal(selectBox._select[0], $("#input-selectbox-example")[0], "Container/Select saved");
 
         assert.equal(selectBox._list.is("ul"), true, "Made list done");
-        assert.equal(selectBox._list.children().length, 7, "Content list complete");
+        assert.equal(selectBox._list.children().length, 21, "Content list complete");
     });
 });

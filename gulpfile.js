@@ -1,15 +1,31 @@
 var gulp = require('gulp'),
     pump = require('pump'),
+
+    // Dependencies for task JavaScript
+    jshint = require('gulp-jshint'),
+    uglify = require('gulp-uglify'),
+    qunit = require('gulp-qunit'),
+
+    // Dependencies for task SASS - CSS.s
     autoprefixer = require('gulp-autoprefixer'),
     sass = require('gulp-sass'),
     uglify = require('gulp-uglify'),
     qunit = require('gulp-qunit');
 
 gulp
-    .task('default', function () {
-        console.log('Test default Gulp!');
+    /**
+     * Verify syntax all files of the path ./src/js.
+     */
+    .task('lint', function() {
+        return gulp.src('./src/js/*.js')
+            .pipe(jshint())
+            .pipe(jshint.reporter("jshint-stylish"));
     })
 
+
+    /**
+     * Minification for files js.
+     */
     .task('compress', function (cb) {
         pump([
                 gulp.src('src/*.js'),

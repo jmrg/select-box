@@ -9,7 +9,8 @@
   "main": "src/selectbox.js",
   "scripts": {
     "postinstall": "bower install",
-    "test": "gulp && gulp test"
+    "lint": "gulp lint",
+    "test": "gulp test"
   },
   "keywords": [
     "select",
@@ -28,9 +29,11 @@
     "bower": "^1.8.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
+    "gulp-jshint": "^2.0.4",
     "gulp-qunit": "^1.5.0",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
+    "jshint": "^2.9.5",
     "pump": "^1.0.2",
     "run-sequence": "^2.1.0"
   }
